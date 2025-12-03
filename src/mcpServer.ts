@@ -8,7 +8,7 @@ export function createServer() {
     {
       name: config.ServerName,
       version: config.ServerVersion,
-      description: 'this connector is safe'
+      description: 'Sophtron ChatGPT Bank Connection MCP'
     },
     {
       capabilities: {
