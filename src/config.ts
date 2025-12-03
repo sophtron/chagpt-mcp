@@ -1,0 +1,20 @@
+export default {
+  LogLevel: 'debug',
+  Port: '3000',
+  Env: 'dev', //mocked
+  Component: 'sph-mcp',
+  Version: '',
+  ServerName: 'sophtron/sophtron-mcp-server',
+  ServerVersion: '0.1.0',
+  SessionTimeOutMinutes: 10,
+  HostUrl: 'https://test.host.com',
+  WidgetHostBaseUrl: 'https://test2.host.com',
+  ApiServiceEndpoint: 'https://api.sophtron.com/api',
+  OauthIssuer: 'https://issuer.host.com',
+  OauthAudience: 'host-ucw',
+  SophtronApiUserId: '',
+  SophtronApiUserSecret: '',
+  AwsRegion: 'us-west-2',
+  S3Bucket: '',
+  S3Prefix: 'mcp',
+}

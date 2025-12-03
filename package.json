@@ -1,0 +1,53 @@
+{
+  "name": "@sophtron/sophtron-mcp-server",
+  "version": "0.1.0",
+  "description": "MCP server for using the sophtron API in chatgpt app",
+  "license": "MIT",
+  "author": "",
+  "homepage": "https://sophtron.com",
+  "bugs": "https://github.com/sophtron/chatgpt-mcp/issues",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "server": "dist/index.js"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "npx tsx src/index.ts",
+    "inspector": "DANGEROUSLY_OMIT_AUTH=true npx @modelcontextprotocol/inspector"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.20.0",
+    "axios": "^1.9.0",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
+    "express-oauth2-jwt-bearer": "^1.7.1",
+    "zod": "^3.22.4",
+    "zod-to-json-schema": "^3.23.5"
+  },
+  "devDependencies": {
+    "@modelcontextprotocol/inspector": "^0.14.3",
+    "@types/express": "^5.0.1",
+    "@types/node": "^22.15.3",
+    "tsup": "^8.5.0",
+    "tsx": "^4.19.4",
+    "typescript": "^5.8.3"
+  },
+  "tsup": {
+    "entry": [
+      "src/index.ts"
+    ],
+    "format": [
+      "esm"
+    ],
+    "dts": true,
+    "clean": true,
+    "outDir": "dist",
+    "external": []
+  }
+}
