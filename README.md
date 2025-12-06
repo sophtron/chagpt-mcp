@@ -1,6 +1,6 @@
 # Sophtron ChatGPT Bank Connection MCP Server
 
-- Brings up sophtron hosted UCW-Widget to allow user to make a connection to a his bank account inside of a chat session.
+- Brings up sophtron hosted UCW-Widget to allow user to make a connection to a his bank account inside of a chat session. The UCW-widget is another open source project that creates an unified widget for users to connect to banks/utilities across aggregators. https://github.com/sophtron/ucw-app
 - Use the connection info to query account info. owner info and transactions.
 - Saves connected account to the mcp server in order to query and update data in a different session.
 - Sophtron is a data aggregator similar to Plaid. Sophtron provides a non-code widget as well as restful API for developers to let users add banking, investment, loan, insurance, utility accounts. https://sophtron.com/usecase
